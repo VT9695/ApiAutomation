@@ -34,7 +34,7 @@ public class ApitestScripts extends Helper {
 						.get(ReadTestData.getTestData("uriGetUsers"));//?page=2 query params
 						int ActualStatusCode =res.statusCode();
 						assertEquals(ActualStatusCode, 200);
-}	
+}	 
 @Test(description= "validate the Response Body for the get user endpoints")
 	public void valdiateResponseBodyGetuser() throws IOException, org.json.simple.parser.ParseException {	        
 		Response res =				RestAssured
@@ -258,7 +258,7 @@ public void postAutoExtFilebycomplexpojoclass() throws IOException, org.json.sim
 
 
 ///day-11
-@Test(description= "Automate post method for the users")
+@Test(description= "Automate post method for the users yueyuyyeuye")
 public void validatePostBodyComplexPojo()  throws IOException, org.json.simple.parser.ParseException {
 
 		pojoComplex pojo= new pojoComplex();
@@ -276,7 +276,7 @@ public void validatePostBodyComplexPojo()  throws IOException, org.json.simple.p
 		cities.setName("delhi");
 		cities.setTemprature("40");
 		
-		List<cityModel>lst= new ArrayList<>();''
+		List<cityModel>lst= new ArrayList<>();
 		lst.add(cities);
 		lst.add(cities2);
 		
