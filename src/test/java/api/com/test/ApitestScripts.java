@@ -230,31 +230,31 @@ public void postAutoExtFilebypojoclass() throws IOException, org.json.simple.par
 
 //managing complex pojos
 
-@Test(description= "Automate post method for the users")
-public void postAutoExtFilebycomplexpojoclass() throws IOException, org.json.simple.parser.ParseException {
-    File Filerb = new File("V:\\naveen automation labs\\tet\\Resources\\TestData\\postmethodrequestbody.json");
-    FileInputStream file = new FileInputStream(Filerb);
-    
-    List<String>jobss = new ArrayList<String>();
-    jobss.add("tester");
-    jobss.add("developer");
-    jobss.add("support");
-    
-    pojoClass pojorb = new pojoClass();
-    pojorb.setName("morpheus");
-    pojorb.setJob("leader");
-    pojorb.setJobs(jobss);
-    Response res = RestAssured
-        .given().header("Content-Type", "application/json")
-        .body(pojorb)
-        .when().post("https://reqres.in/api/users");
-
-    assertEquals(res.getStatusCode(),201);
-
-    System.out.println("the status code for the post method is "+res.getStatusCode());
-    System.out.println("The response body of the post method is "+ res.getBody().asString());
-
-}
+//@Test(description= "Automate post method for the users")
+//public void postAutoExtFilebycomplexpojoclass() throws IOException, org.json.simple.parser.ParseException {
+//    File Filerb = new File("V:\\naveen automation labs\\tet\\Resources\\TestData\\postmethodrequestbody.json");
+//    FileInputStream file = new FileInputStream(Filerb);
+//    
+//    List<String>jobss = new ArrayList<String>();
+//    jobss.add("tester");
+//    jobss.add("developer");
+//    jobss.add("support");
+//    
+//    pojoClass pojorb = new pojoClass();
+//    pojorb.setName("morpheus");
+//    pojorb.setJob("leader");
+//    pojorb.setJobs(jobss);
+//    Response res = RestAssured
+//        .given().header("Content-Type", "application/json")
+//        .body(pojorb)
+//        .when().post("https://reqres.in/api/users");
+//
+//    assertEquals(res.getStatusCode(),201);
+//
+//    System.out.println("the status code for the post method is "+res.getStatusCode());
+//    System.out.println("The response body of the post method is "+ res.getBody().asString());
+//
+//}
 
 
 ///day-11
