@@ -1,0 +1,11 @@
+{
+
+"uriGetUsers" :"https://reqres.in/api/users?page=2",
+"expectedStatusCode":200,
+"url":"https://reqres.in/#support-heading",
+"endPointUrl":"/api/users"
+
+
+
+
+}
